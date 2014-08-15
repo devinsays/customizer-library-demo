@@ -32,6 +32,7 @@ function customizer_library_demo_build_styles() {
 				'color' => $color
 			)
 		) );
+	}
 }
 endif;
 

@@ -17,7 +17,7 @@
 
 <body <?php body_class(); ?>>
 
-	<h1 class="primary"><?php __( 'Customizer Library Demo', 'demo' ); ?></h1>
+	<h1 class="primary"><?php _e( 'Customizer Library Demo', 'demo' ); ?></h1>
 
 <?php wp_footer(); ?>
 
