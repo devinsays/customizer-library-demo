@@ -5,6 +5,12 @@
  * @package Customizer Library Demo
  */
 
+// Default styles
+function demo_styles() {
+	wp_enqueue_style( 'demo-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'demo_styles' );
+
 // Helper library for the theme customizer.
 require get_template_directory() . '/inc/customizer-library/customizer-library.php';
 

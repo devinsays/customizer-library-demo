@@ -10,6 +10,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: demo
 */
 
+* {
+	box-sizing: border-box;
+}
+html {
+	margin: 0;
+	padding: 0;
+}
 body {
-	background:#fff;
+	background: #fff;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 14%;
+	min-height:100%;
+}
+.border {
+	position: fixed;
+	border: 20px solid #5BC08C;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.admin-bar .border {
+	top: 32px;
+}
+h1, h2 {
+	font-weight: 400;
+}
+h1 {
+	font-family: 'Monoton';
+	line-height: 1.2;
+	color: #5BC08C;
+	font-size: 68px;
+}
+h2 {
+	font-family: 'Merriweather';
+	color: #555;
+	font-size: 30px;
 }

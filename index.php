@@ -4,22 +4,27 @@
  *
  * @package Customizer Library Demo
  */?><!DOCTYPE html>
-<html class="no-js" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<title><?php _e( 'Customizer Library Demo', 'demo' ); ?></title>
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-	<h1 class="primary"><?php _e( 'Customizer Library Demo', 'demo' ); ?></h1>
+	<h1 class="primary">
+		<?php if ( get_theme_mod( 'logo', false ) ) {
+			echo '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '">';
+		} else { ?>
+			<?php _e( 'Customizer Library', 'demo' ); ?>
+		<?php } ?>
+	</h1>
+	<h2 class="secondary"><?php _e( 'Try it Out', 'demo' ); ?></h2>
+
+	<div class="border"></div>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
