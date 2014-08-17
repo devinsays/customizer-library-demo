@@ -23,7 +23,6 @@ function customizer_library_demo_build_styles() {
 
 		$color = sanitize_hex_color( $mod );
 
-		// Link Styling
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.primary'
@@ -42,7 +41,6 @@ function customizer_library_demo_build_styles() {
 
 		$color = sanitize_hex_color( $mod );
 
-		// Link Styling
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.secondary'
@@ -61,7 +59,6 @@ function customizer_library_demo_build_styles() {
 
 		$color = sanitize_hex_color( $mod );
 
-		// Link Styling
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.border'
@@ -132,7 +129,7 @@ function customizer_library_demo_styles() {
 	$css = Customizer_Library_Styles()->build();
 
 	if ( ! empty( $css ) ) {
-		echo "\n<!-- Begin Custom CSS -->\n<style type=\"text/css\" id=\"gather-custom-css\">\n";
+		echo "\n<!-- Begin Custom CSS -->\n<style type=\"text/css\" id=\"demo-custom-css\">\n";
 		echo $css;
 		echo "\n</style>\n<!-- End Custom CSS -->\n";
 	}
