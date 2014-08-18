@@ -4,7 +4,7 @@ An example theme that shows how to work with the Customizer Library.
 
 ## About
 
-Please read the description for the [Customizer Library](https://github.com/devinsays/customizer-library) project.
+Read the description for the [Customizer Library](https://github.com/devinsays/customizer-library) project.
 
 ## Installation
 
@@ -62,7 +62,7 @@ $customizer_library->add_options( $options );
 
 ## Styles
 
-The Customizer Library has a helper class to output inline styles.  This code was originally developed by [The Theme Foundary](https://thethemefoundry.com/) for use in [Make](https://thethemefoundry.com/wordpress-themes/make/).  To see how it works, see "inc/styles.php".
+The Customizer Library has a helper class to output inline styles.  This code was originally developed by [The Theme Foundry](https://thethemefoundry.com/) for use in [Make](https://thethemefoundry.com/wordpress-themes/make/).  To see how it works, see "inc/styles.php".
 
 CSS selector(s) and value are passed to Customizer_Library_Styles class like this:
 
@@ -79,7 +79,7 @@ Customizer_Library_Styles()->add( array(
 
 ## Fonts
 
-The Customizer Library has a helper functions to output font stacks and load inline fonts.  This code was also developed by [The Theme Foundary](https://thethemefoundry.com/) for use in [Make](https://thethemefoundry.com/wordpress-themes/make/).  You can see an example of font enqueing in "inc/mods.php":
+The Customizer Library has a helper functions to output font stacks and load inline fonts.  This code was also developed by [The Theme Foundry](https://thethemefoundry.com/) for use in [Make](https://thethemefoundry.com/wordpress-themes/make/).  You can see an example of font enqueing in "inc/mods.php":
 
 ~~~php
 function demo_fonts() {

@@ -3,7 +3,7 @@
  * Markup required to showcase Customizer Library features.
  *
  * @package Customizer Library Demo
- */?><!DOCTYPE html>
+ */ ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
