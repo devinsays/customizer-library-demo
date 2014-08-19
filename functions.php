@@ -33,6 +33,6 @@ endif;
 
 function demo_customizer_library_notice() {
 
-	_e( '<p>Notice: The "customizer-library" sub-module is not loaded.</p><p>Please add it to the "inc" directory.  It can be found at: <a href="https://github.com/devinsays/customizer-library">https://github.com/devinsays/customizer-library</a>.</p><p>It can also be loaded using git: "git submodule add git@github.com:devinsays/customizer-library customizer-library".</p>', 'demo' );
+	_e( '<p>Notice: The "customizer-library" sub-module is not loaded.</p><p>Please add it to the "inc" directory: <a href="https://github.com/devinsays/customizer-library">https://github.com/devinsays/customizer-library</a>.</p><p>The demo, including submodules, can also be installed via Git: "git clone --recursive git@github.com:devinsays/customizer-library-demo".</p>', 'demo' );
 
 }
