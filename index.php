@@ -23,6 +23,8 @@
 	</h1>
 	<h2 class="secondary"><?php _e( 'Try it Out', 'demo' ); ?></h2>
 
+	<?php do_action( 'customizer-library-notices' ); ?>
+
 	<div class="border"></div>
 
 <?php wp_footer(); ?>

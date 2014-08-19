@@ -11,6 +11,8 @@ function demo_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'demo_styles' );
 
+if ( file_exists ( get_template_directory() . '/inc/customizer-library/customizer-library.php' ) ) :
+
 // Helper library for the theme customizer.
 require get_template_directory() . '/inc/customizer-library/customizer-library.php';
 
@@ -22,3 +24,15 @@ require get_template_directory() . '/inc/styles.php';
 
 // Additional filters and actions based on theme customizer selections.
 require get_template_directory() . '/inc/mods.php';
+
+else :
+
+add_action( 'customizer-library-notices', 'demo_customizer_library_notice' );
+
+endif;
+
+function demo_customizer_library_notice() {
+
+	_e( '<p>Notice: The "customizer-library" sub-module is not loaded.</p><p>Please add it to the "inc" directory.  It can be found at: <a href="https://github.com/devinsays/customizer-library">https://github.com/devinsays/customizer-library</a>.</p><p>It can also be loaded using git: "git submodule add git@github.com:devinsays/customizer-library customizer-library".</p>', 'demo' );
+
+}
