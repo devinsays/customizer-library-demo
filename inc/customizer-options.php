@@ -73,6 +73,7 @@ function customizer_library_demo_options() {
 
 	// Typography
 	$section = 'typography';
+	$font_choices = customizer_library_get_font_choices();
 
 	$sections[] = array(
 		'id' => $section,
@@ -85,7 +86,7 @@ function customizer_library_demo_options() {
 		'label'   => __( 'Primary Font', 'demo' ),
 		'section' => $section,
 		'type'    => 'select',
-		'choices' => customizer_library_get_font_choices(),
+		'choices' => $font_choices,
 		'default' => 'Monoton'
 	);
 
@@ -94,7 +95,7 @@ function customizer_library_demo_options() {
 		'label'   => __( 'Secondary Font', 'demo' ),
 		'section' => $section,
 		'type'    => 'select',
-		'choices' => customizer_library_get_font_choices(),
+		'choices' => $font_choices,
 		'default' => 'Merriweather'
 	);
 
