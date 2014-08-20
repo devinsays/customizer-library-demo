@@ -26,7 +26,8 @@ function customizer_library_demo_options() {
 	$sections[] = array(
 		'id' => $section,
 		'title' => __( 'Image Example', 'demo' ),
-		'priority' => '30'
+		'priority' => '30',
+		'description' => __( 'Example section description.', 'demo' )
 	);
 
 	$options['logo'] = array(
