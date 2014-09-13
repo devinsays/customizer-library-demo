@@ -8,12 +8,11 @@ Read the description for the [Customizer Library](https://github.com/devinsays/c
 
 ## Installation
 
-To install this demo and the required submodule, use:
-`git clone --recursive git@github.com:devinsays/customizer-library-demo`
+To install this demo use:
+`git clone git@github.com:devinsays/customizer-library-demo`
 
-The [Customizer Library](https://github.com/devinsays/customizer-library) is included in this theme as a git submodule.  To include it in your own projects the same way, navigate to the directory and use:
-
-`git submodule add git@github.com:devinsays/customizer-library customizer-library`
+This demo might lag slightly behind the most recent version of the Customizer Library.  To pull in the latest from there for you own projects, use:
+`git clone git@github.com:devinsays/customizer-library`
 
 ## Define Options
 

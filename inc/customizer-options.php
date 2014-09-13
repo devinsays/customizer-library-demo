@@ -34,6 +34,24 @@ function customizer_library_demo_options() {
 		'id' => 'logo',
 		'label'   => __( 'Logo', 'demo' ),
 		'section' => $section,
+		'type'    => 'image',
+		'default' => '',
+	);
+
+	// File Upload
+	$section = 'upload';
+
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'File Upload Example', 'demo' ),
+		'priority' => '30',
+		'description' => __( 'Example section description.', 'demo' )
+	);
+
+	$options['upload'] = array(
+		'id' => 'upload',
+		'label'   => __( 'upload', 'demo' ),
+		'section' => $section,
 		'type'    => 'upload',
 		'default' => '',
 	);
