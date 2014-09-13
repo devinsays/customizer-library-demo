@@ -1,0 +1,3 @@
+[submodule "inc/customizer-library"]
+	path = inc/customizer-library
+	url = git@github.com:devinsays/customizer-library
