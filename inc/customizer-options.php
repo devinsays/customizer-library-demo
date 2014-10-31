@@ -126,6 +126,13 @@ function customizer_library_demo_options() {
 		'priority' => '90'
 	);
 
+	$options['example-text'] = array(
+		'id' => 'example-text',
+		'label'   => __( 'Example Text Input', 'demo' ),
+		'section' => $section,
+		'type'    => 'text',
+	);
+
 	$options['example-checkbox'] = array(
 		'id' => 'example-checkbox',
 		'label'   => __( 'Example Checkbox', 'demo' ),
