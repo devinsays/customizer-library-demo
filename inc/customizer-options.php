@@ -17,6 +17,9 @@ function customizer_library_demo_options() {
 	// Stores all the sections to be added
 	$sections = array();
 
+	// Stores all the panels to be added
+	$panels = array();
+
 	// Adds the sections to the $options array
 	$options['sections'] = $sections;
 
@@ -173,8 +176,36 @@ function customizer_library_demo_options() {
 		'default' => __( 'Example textarea text.', 'demo'),
 	);
 
+	// Panel Example
+	$panel = 'panel';
+
+	$panels[] = array(
+		'id' => $panel,
+		'title' => __( 'Panel Examples', 'demo' ),
+		'priority' => '100'
+	);
+
+	$section = 'panel-section';
+
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'Panel Section', 'demo' ),
+		'priority' => '10',
+		'panel' => $panel
+	);
+
+	$options['example-panel-text'] = array(
+		'id' => 'example-panel-text',
+		'label'   => __( 'Example Text Input', 'demo' ),
+		'section' => $section,
+		'type'    => 'text',
+	);
+
 	// Adds the sections to the $options array
 	$options['sections'] = $sections;
+
+	// Adds the panels to the $options array
+	$options['panels'] = $panels;
 
 	$customizer_library = Customizer_Library::Instance();
 	$customizer_library->add_options( $options );
