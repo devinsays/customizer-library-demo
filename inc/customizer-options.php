@@ -38,7 +38,7 @@ function customizer_library_demo_options() {
 		'label'   => __( 'Logo', 'demo' ),
 		'section' => $section,
 		'type'    => 'image',
-		'default' => '',
+		'default' => ''
 	);
 
 	// File Upload
@@ -136,6 +136,13 @@ function customizer_library_demo_options() {
 		'type'    => 'text',
 	);
 
+	$options['example-url'] = array(
+		'id' => 'example-url',
+		'label'   => __( 'Example URL Input', 'demo' ),
+		'section' => $section,
+		'type'    => 'url',
+	);
+
 	$options['example-checkbox'] = array(
 		'id' => 'example-checkbox',
 		'label'   => __( 'Example Checkbox', 'demo' ),
@@ -174,6 +181,19 @@ function customizer_library_demo_options() {
 		'section' => $section,
 		'type'    => 'textarea',
 		'default' => __( 'Example textarea text.', 'demo'),
+	);
+
+	$options['example-range'] = array(
+		'id' => 'example-range',
+		'label'   => __( 'Example Range Input', 'demo' ),
+		'section' => $section,
+		'type'    => 'range',
+		'input_attrs' => array(
+	        'min'   => 0,
+	        'max'   => 10,
+	        'step'  => 1,
+	        'style' => 'color: #0a0',
+		)
 	);
 
 	// Panel Example
